@@ -15,4 +15,5 @@ jobs:
           node-version: 20.9
           cache: 'npm'
           registry-url: https://registry.npmjs.org/
+      - run: npm ci
       - run: npx nx affected -t test
