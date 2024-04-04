@@ -52,3 +52,5 @@ jobs:
       - run: git config --global user.name "nickheal"
 
       - run: npx nx release ${{ github.event.inputs.increment }} --projects=${{ github.event.inputs.target }} --yes
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
