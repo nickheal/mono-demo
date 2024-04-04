@@ -3,11 +3,24 @@
 name: Validation
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Release package'
+        required: true
+        type: choice
+        options:
+          - demo-package-a
+          - demo-package-b
+      increment:
+        description: 'Increment'
+        required: true
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+      
 # Needed for nx-set-shas when run on the main branch
 permissions:
   actions: read
@@ -33,4 +46,4 @@ jobs:
       - run: git branch --track main origin/main
         if: ${{ github.event_name == 'pull_request' }}
 
-      - run: npx nx affected -t test
+      - run: npx nx release --dry-run
