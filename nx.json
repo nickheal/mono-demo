@@ -2,7 +2,9 @@
   "extends": "nx/presets/npm.json",
   "release": {
     "changelog": {
-      "projectChangelogs": true
+      "projectChangelogs": {
+        "createRelease": "github"
+      }
     },
     "projectsRelationship": "independent"
   },
