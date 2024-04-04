@@ -21,6 +21,8 @@ on:
           - minor
           - major
       
+run-name: Release ${{ github.event.inputs.target }} ${{ github.event.inputs.increment }}
+
 # Needed for nx-set-shas when run on the main branch
 permissions:
   actions: read
