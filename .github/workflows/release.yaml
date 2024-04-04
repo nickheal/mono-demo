@@ -1,6 +1,6 @@
 # This workflow will run tests using node
 
-name: Validation
+name: Release
 
 on:
   workflow_dispatch:
