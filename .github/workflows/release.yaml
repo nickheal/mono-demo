@@ -27,7 +27,7 @@ permissions:
   contents: read
 
 jobs:
-  validation:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
