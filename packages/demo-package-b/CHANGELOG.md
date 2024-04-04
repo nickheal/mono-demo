@@ -1,3 +1,20 @@
+## 0.0.5 (2024-04-04)
+
+
+### 🚀 Features
+
+- add token to release action ([c0eaa3b](https://github.com/nickheal/mono-demo/commit/c0eaa3b))
+
+
+### 🩹 Fixes
+
+- package-lock sync issue ([3e42fca](https://github.com/nickheal/mono-demo/commit/3e42fca))
+
+
+### ❤️  Thank You
+
+- Nicholas Heal
+
 ## 0.0.4 (2024-04-04)
 
 
