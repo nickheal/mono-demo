@@ -53,4 +53,5 @@ jobs:
 
       - run: npx nx release ${{ github.event.inputs.increment }} --projects=${{ github.event.inputs.target }} --yes
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
