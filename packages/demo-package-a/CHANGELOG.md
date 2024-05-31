@@ -1,3 +1,15 @@
+## 0.2.1 (2024-05-31)
+
+
+### 🩹 Fixes
+
+- add noreply email address ([9497434](https://github.com/nickheal/mono-demo/commit/9497434))
+
+
+### ❤️  Thank You
+
+- Nicholas Heal
+
 ## 0.2.0 (2024-04-15)
 
 This was a version bump only for demo-package-a to align it with other projects, there were no code changes.
