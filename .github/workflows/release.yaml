@@ -49,7 +49,7 @@ jobs:
       - run: git branch --track main origin/main
         if: ${{ github.event_name == 'pull_request' }}
 
-      - run: git config --global user.email "nickhealweb@gmail.com"
+      - run: git config --global user.email "12532041+nickheal@users.noreply.github.com"
       - run: git config --global user.name "nickheal"
 
       - run: npx nx release ${{ github.event.inputs.increment }} --projects=${{ github.event.inputs.target }} --yes
